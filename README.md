@@ -1,7 +1,7 @@
 # Final Project for Programming Languages
 _Marcela Fuentes (A01748161) and Juan Carlos Hurtado (A01025193)_
 
-![logo](../img/logo.png) 
+![logo](./img/logo.png) 
 
 ## Problem Description
 
@@ -36,11 +36,11 @@ The following techniques will be implemented in the program:
 - **Caesar Cipher**
     - This is one of the earliest and simplest method of encryption.
     - It is a type of substitution cipher: each letter of a given text is replaced by a letter some fixed number of positions down the alphabet.
-    ![caesar](../img/caesar.png)
+    ![caesar](./img/caesar.png)
     - The method is named after the Roman Emperor Julius Caesar, who according to historians used this technique to communicate with his officials.
     - The encryption and decryption can be represented using modular arithmetic by first transforming the letters into numbers.
-    ![caesarencrypt](../img/caesarenc.png)
-    ![caesardecrypt](../img/caesardec.png)
+    ![caesarencrypt](./img/caesarenc.png)
+    ![caesardecrypt](./img/caesardec.png)
     - How will it be coded:
         - Traverse the given text one character at a time.
         - For each character, transform the given character as per the rule, depending on whether we’re encrypting or decrypting the text.
@@ -51,17 +51,17 @@ The following techniques will be implemented in the program:
         - The first row of this table has the 26 English letters.
         - Starting with the second row, each row has the letters shifted to the left one position in a cyclic way. 
         - For example, when B is shifted to the first position on the second row, the letter A moves to the end.
-    ![vigenere](../img/vigenere.jpg)
+    ![vigenere](./img/vigenere.jpg)
     - In addition to the plaintext, the Vigenère cipher also requires a keyword, which is repeated so that the total length is equal to that of the plaintext.
     - How will it be coded:
         - We follow the tradition by removing all spaces and punctuation, converting all letters to upper case, and dividing the result into 5-letter blocks.
         - To encrypt, pick a letter in the plaintext and its corresponding letter in the keyword, use the keyword letter and the plaintext letter as the row index and column index, respectively, and the entry at the row-column intersection is the letter in the ciphertext.
         - Repeat this process until all plaintext letters are processed.
             - The process can also be represented by a mathematical equation:
-            ![vigenereenc](../img/vigenereenc.png)
+            ![vigenereenc](./img/vigenereenc.png)
         - To decrypt, pick a letter in the ciphertext and its corresponding letter in the keyword, use the keyword letter to find the corresponding row, and the letter heading of the column that contains the ciphertext letter is the needed plaintext letter.
             - The process can also be represented by a mathematical equation:
-            ![vigeneredec](../img/vigeneredec.png)
+            ![vigeneredec](./img/vigeneredec.png)
 - **One-time Pad**
     - One-time pad (OTP), also called Vernam-cipher or the perfect cipher, is a crypto algorithm where plaintext is combined with a random key.
     - It is the only existing mathematically unbreakable encryption.
