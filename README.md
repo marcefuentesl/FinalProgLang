@@ -51,7 +51,7 @@ The following techniques will be implemented in the program:
         - The first row of this table has the 26 English letters.
         - Starting with the second row, each row has the letters shifted to the left one position in a cyclic way. 
         - For example, when B is shifted to the first position on the second row, the letter A moves to the end.
-    ![vigenere](../img/vigenere.png)
+    ![vigenere](../img/vigenere.jpg)
     - In addition to the plaintext, the Vigenère cipher also requires a keyword, which is repeated so that the total length is equal to that of the plaintext.
     - How will it be coded:
         - We follow the tradition by removing all spaces and punctuation, converting all letters to upper case, and dividing the result into 5-letter blocks.
