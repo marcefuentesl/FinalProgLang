@@ -1,5 +1,5 @@
 # Final Project for Programming Languages
-_Marcela Fuentes (A01748161) and Juan Carlos Hurtado (A01025193)_
+_Marcela Fuentes Lecuona (A01748161) and Juan Carlos Hurtado Andrade (A01025193)_
 
 ![logo](./img/logo.png) 
 
@@ -31,6 +31,8 @@ In the modern world, encryption is a necessary mean of security when dealing wit
 ## Solution Explanation
 
 That's when (de)cipher comes in: we will allow the user to choose between three encryption techniques and upload a text file that they want to either encrypt or decrypt. The language used in the development of this project will be **Elixir**.
+
+Recursion will be needed to go through the data in the input files to do the necessary conversions for the encryption/decryption method to work. Lists will prove themselves useful by storing the ciphered/deciphered messages.
 
 The following techniques will be implemented in the program:
 - **Caesar Cipher**
